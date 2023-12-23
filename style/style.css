@@ -94,6 +94,32 @@
   }
 }
 
+@keyframes sectionAppear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.005);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes menuAppear {
+  0% {
+    transform: scale3d(0, 0, 0);
+  }
+  60% {
+    transform: scale3d(1.02, 1.02, 1.12);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 /** General **/
 * {
   margin: 0;
@@ -604,6 +630,8 @@ span {
 
 .menu__content {
   margin-bottom: 2.5rem;
+  transform-origin: top;
+  animation: menuAppear 1s both ease;
 }
 .menu hr {
   margin-bottom: 0.75rem;
@@ -626,6 +654,9 @@ span {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   margin-top: 12px;
+  transform: scale(0);
+  opacity: 1;
+  animation: sectionAppear 1s forwards ease;
 }
 
 .menuSection__content {
@@ -642,6 +673,7 @@ span {
   overflow: hidden;
   width: 100%;
   padding: 15px;
+  transition: all 400ms ease-out;
 }
 
 .menuSection__desc {
@@ -668,6 +700,89 @@ span {
 
 .menuSection__price p {
   font-weight: 700;
+}
+
+.menuSection__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99e2d0;
+  position: absolute;
+  width: 3.5rem;
+  height: 100%;
+  right: -6rem;
+  transition: all 400ms ease-out;
+}
+.menuSection__btn--transform {
+  border-radius: 40px;
+  padding: 2px 4px;
+  background: white;
+}
+
+.fa-check {
+  color: #99E2D0;
+  font-weight: 900;
+}
+
+.menuSection:hover .menuSection__food {
+  margin-right: 3.5rem;
+}
+
+.menuSection:hover .menuSection__btn {
+  cursor: pointer;
+  right: 0;
+}
+
+.menuAnim-1 {
+  animation-delay: 0ms;
+}
+
+.menuAnim-2 {
+  animation-delay: 250ms;
+}
+
+.menuAnim-3 {
+  animation-delay: 350ms;
+}
+
+.anim-1 {
+  animation-delay: 0ms;
+}
+
+.anim-2 {
+  animation-delay: 50ms;
+}
+
+.anim-3 {
+  animation-delay: 100ms;
+}
+
+.anim-4 {
+  animation-delay: 150ms;
+}
+
+.anim-5 {
+  animation-delay: 200ms;
+}
+
+.anim-6 {
+  animation-delay: 250ms;
+}
+
+.anim-7 {
+  animation-delay: 300ms;
+}
+
+.anim-8 {
+  animation-delay: 400ms;
+}
+
+.anim-9 {
+  animation-delay: 450ms;
+}
+
+.anim-10 {
+  animation-delay: 500ms;
 }
 
 .menu__command {
