@@ -790,3 +790,29 @@ span {
   justify-content: center;
   margin: 2.5rem 0;
 }
+
+/****************************** Media Queries ********************************/
+@media (min-width: 1024px) {
+  .restaurantPage__img img {
+    height: 500px;
+  }
+  .restaurantContent__container {
+    max-width: 1440px;
+    width: 100%;
+  }
+  .restaurantContent__title {
+    justify-content: center;
+  }
+  .restaurantContent__title h2 {
+    margin-right: 2.5rem;
+  }
+  .restaurantContent__menu {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+  .menuSection__content {
+    display: flex;
+    align-items: center;
+  }
+}
