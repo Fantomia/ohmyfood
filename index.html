@@ -22,16 +22,18 @@
   
     <!-- Animation lors du chargement de la page d'accueil -->
     
-  <div class="loader">
-    <div class="loader__anim loader__anim--1"></div>
-    <div class="loader__anim loader__anim--2"></div>
-    <div class="loader__anim loader__anim--3"></div>
-    <div class="loader__txt">
-      <p>ohmyfood</p>
-    </div>
-  </div>
+  
 
   <body>
+    <div class="loader">
+      <div class="loader__anim loader__anim--1"></div>
+      <div class="loader__anim loader__anim--2"></div>
+      <div class="loader__anim loader__anim--3"></div>
+      <div class="loader__txt">
+        <p>ohmyfood</p>
+      </div>
+    </div>
+    
     <header class="header">
       <div class="header__shadow">
         <a href="index.html">
@@ -97,80 +99,96 @@
         <section class="restaurant__index">
           <h3>Restaurants</h3>
           <div class="restaurant__cards">
-            <a href="menilmontant.html">
-              <article class="restaurantCard">
-                <img src="./images/restaurants/menilmontant.jpg" alt="Ménilmontant" >
-                <span class="restaurantCard__new">Nouveau</span>
-                <div class="restaurantCard__content">
-                  <div class="restaurantCard__info">
-                    <h4>La palette du goût</h4>
-                    <p>Ménilmontant</p>
+            <div class="restaurantCard">
+              <a href="menilmontant.html">
+                <article class="restaurantCard__article">
+                  <img src="./images/restaurants/menilmontant.jpg" alt="Ménilmontant" >
+                  <span class="restaurantCard__new">Nouveau</span>
+                  <div class="restaurantCard__content">
+                    <div class="restaurantCard__info">
+                      <h4>La palette du goût</h4>
+                      <p>Ménilmontant</p>
+                    </div> 
                   </div>
-                  <article class="favorite">
-                    <input type="checkbox" class="favorite__toggle" name="like">
-                    <label class="favorite__icon">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </label>
-                  </article> 
-                </div>
-              </article>
-            </a>
-            <a href="charonne.html">
-              <article class="restaurantCard">
-                <img src="./images/restaurants/charonne.jpg" alt="Charonne">
-                <span class="restaurantCard__new">Nouveau</span>
-                <div class="restaurantCard__content">
-                  <div class="restaurantCard__info">
-                    <h4>La note enchantée</h4>
-                    <p>Charonne</p>
+                </article>
+              </a>
+              <div class="favoriteHeart">
+                <article class="favorite">
+                  <input type="checkbox" class="favorite__toggle" name="like">
+                  <label class="favorite__icon">
+                      <i class="far fa-heart"></i>
+                      <i class="fas fa-heart"></i>
+                  </label>
+                </article>
+              </div>
+            </div>
+            <div class="restaurantCard">
+              <a href="charonne.html">
+                <article class="restaurantCard__article">
+                  <img src="./images/restaurants/menilmontant.jpg" alt="Ménilmontant" >
+                  <span class="restaurantCard__new">Nouveau</span>
+                  <div class="restaurantCard__content">
+                    <div class="restaurantCard__info">
+                      <h4>La note enchantée</h4>
+                      <p>Charonne</p>
+                    </div> 
                   </div>
-                  <article class="favorite">
-                    <input type="checkbox" class="favorite__toggle" name="like">
-                    <label class="favorite__icon">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </label>
-                  </article>
-                </div>
-              </article>
-            </a>
-            <a href="citerouge.html">
-              <article class="restaurantCard">
-                <img src="./images/restaurants/citerouge.jpg" alt="Cité Rouge" >
-                <div class="restaurantCard__content">
-                  <div class="restaurantCard__info">
-                    <h4>A la française</h4>
-                    <p>Cité Rouge</p>
+                </article>
+              </a>
+              <div class="favoriteHeart">
+                <article class="favorite">
+                  <input type="checkbox" class="favorite__toggle" name="like">
+                  <label class="favorite__icon">
+                      <i class="far fa-heart"></i>
+                      <i class="fas fa-heart"></i>
+                  </label>
+                </article>
+              </div>
+            </div>
+            <div class="restaurantCard">
+              <a href="citerouge.html">
+                <article class="restaurantCard__article">
+                  <img src="./images/restaurants/menilmontant.jpg" alt="Ménilmontant" >
+                  <div class="restaurantCard__content">
+                    <div class="restaurantCard__info">
+                      <h4>A la française</h4>
+                      <p>Cité Rouge</p>
+                    </div> 
                   </div>
-                  <article class="favorite">
-                    <input type="checkbox" class="favorite__toggle" name="like">
-                    <label class="favorite__icon">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </label>
-                  </article>
-                </div>
-              </article>
-            </a>
-            <a href="foliemericourt.html">
-              <article class="restaurantCard">
-                <img src="./images/restaurants/foliemericourt.jpg" alt="Folie-Méricourt">
-                <div class="restaurantCard__content">
-                  <div class="restaurantCard__info">
-                    <h4>Le délice des sens</h4>
-                    <p>Folie-Méricourt</p>
+                </article>
+              </a>
+              <div class="favoriteHeart">
+                <article class="favorite">
+                  <input type="checkbox" class="favorite__toggle" name="like">
+                  <label class="favorite__icon">
+                      <i class="far fa-heart"></i>
+                      <i class="fas fa-heart"></i>
+                  </label>
+                </article>
+              </div>
+            </div>
+            <div class="restaurantCard">
+              <a href="foliemericourt.html">
+                <article class="restaurantCard__article">
+                  <img src="./images/restaurants/menilmontant.jpg" alt="Ménilmontant" >
+                  <div class="restaurantCard__content">
+                    <div class="restaurantCard__info">
+                      <h4>Le délice des sens</h4>
+                      <p>Folie-Méricourt</p>
+                    </div> 
                   </div>
-                  <article class="favorite">
-                    <input type="checkbox" class="favorite__toggle" name="like">
-                    <label class="favorite__icon">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </label>
-                  </article>
-                </div>
-              </article>
-            </a>
+                </article>
+              </a>
+              <div class="favoriteHeart">
+                <article class="favorite">
+                  <input type="checkbox" class="favorite__toggle" name="like">
+                  <label class="favorite__icon">
+                      <i class="far fa-heart"></i>
+                      <i class="fas fa-heart"></i>
+                  </label>
+                </article>
+              </div>
+            </div>
           </div>
         </section>
       </div>

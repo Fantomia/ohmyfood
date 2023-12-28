@@ -156,9 +156,14 @@
     width: 100%;
     max-width: 1440px;
     & a {
-      border-radius: 20px;
     }
   }
+}
+
+.favoriteHeart {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 
   
@@ -286,16 +291,14 @@
       flex-wrap: wrap;
       justify-content: space-between;
       & a {
-        width: 45%;
+        
       }
     }
   }
 
   .restaurantCard {
     margin-bottom: 3.125em;
-    &__content {
-      padding: 10px 20px;
-    }
+    width: 45%;
   } 
 
   /** Footer **/
