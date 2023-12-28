@@ -14,10 +14,6 @@
       bottom: 35%;
       padding: 0 30px;
     }
-  
-    &__logo {
-      font-size: 37px;
-    }
 }
 
 /****************************** Main ********************************/
@@ -205,12 +201,17 @@
 .menu__command {
     display: flex;
     justify-content: center;
-    margin: 2.5rem 0;
+    margin-bottom: 2.5rem;
+    margin-top: -2.5rem;
 }
 
 /****************************** Media Queries ********************************/
 
 @media (min-width: 1024px) {
+
+  .headerMenu__logo {
+    font-size: 32px;
+  }
 
   .restaurantPage__img img {
     height: 500px;
@@ -223,7 +224,7 @@
     }
     &__title {
     justify-content: center;
-      & h2 {
+      & h1 {
       margin-right: 2.5rem;
       }  
     }
